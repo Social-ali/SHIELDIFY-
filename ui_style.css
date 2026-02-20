@@ -1,0 +1,116 @@
+/* Base Styling */
+body {
+    background-color: #020617;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #1e293b;
+    background: #020617;
+}
+.logo-text { font-size: 20px; font-weight: bold; }
+.logo-text span { color: #00ffa3; }
+.system-status { display: flex; gap: 20px; font-size: 13px; color: #94a3b8; }
+
+/* Hero Section & Background Orbits */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.main-glow-logo h1 { 
+    font-size: 60px; 
+    margin-top: 15px; 
+    text-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+}
+.main-glow-logo span { color: #00ffa3; }
+
+.hero-title {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Centered Description */
+.hero-desc {
+    color: #94a3b8;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.orbit-container {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orbit-circle {
+    position: absolute;
+    border: 1px solid rgba(0, 255, 163, 0.15);
+    border-radius: 50%;
+}
+.circle-1 { width: 300px; height: 300px; }
+.circle-2 { width: 450px; height: 450px; }
+
+/* --- MODULE CARDS WITH HOVER GLOW --- */
+.card-container {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.card-container:hover {
+    transform: translateY(-8px);
+    border-color: #00ffa3;
+    box-shadow: 0 0 25px rgba(0, 255, 163, 0.2), 0 0 50px rgba(0, 255, 163, 0.05);
+}
+
+.card-icon-box {
+    width: 40px; height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.card-title { font-size: 22px; margin: 0; }
+.card-subtitle { font-size: 13px; font-weight: 600; margin-bottom: 15px; text-transform: uppercase; }
+
+.author-row { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+.avatar { background: #334155; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.author-name { color: #94a3b8; font-size: 14px; }
+.card-body-text { color: #94a3b8; font-size: 14px; line-height: 1.6; }
+
+.outputs-section { margin-top: 20px; }
+.outputs-label { font-size: 11px; color: #00ffa3; font-weight: bold; letter-spacing: 1.5px; }
+.outputs-section ul { list-style: none; padding: 0; margin-top: 10px; }
+.outputs-section li { color: #e2e8f0; font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+
+.card-footer { text-align: right; margin-top: 15px; }
+.status-indicator { color: #10b981; font-size: 18px; line-height: 0; vertical-align: middle; }
+.status-text { color: #10b981; font-size: 12px; }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 60px;
+}
